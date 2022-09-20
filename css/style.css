@@ -1,0 +1,52 @@
+body {
+    background-color: rgb(005,15,105);
+  margin: 30px;
+  }
+  img {
+      
+    }
+  
+  @keyframes rotation {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(359deg);
+    }
+  }
+  body {
+    text-align: center;
+  }
+  
+  a {
+    color: green;
+    
+    
+  }
+  ul {
+    list-style-position: inside;
+  }
+  a:hover {
+    class = "Spin"
+  }
+  body {
+    animation: rotation 0s infinite 
+  }
+  body{
+    font-family: cursive;
+  }
+  img:hover {
+    animation: rotation 5s infinite 
+  }
+  table {
+    color: black;
+    user-select: none;
+    text-align: center;
+  }
+  table, th, td {
+    border: 2px solid black;
+    
+  }
+  table:hover{
+    animation: rotation 5s infinite 
+  }
