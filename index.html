@@ -8,20 +8,63 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
         <div class="container">
             <header class="headerBar">   
                 <nav> 
                     <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Hobby's</a></li>
-                    <li><a href="#">Ervaring</a></li>
+                    <li><a href="#AboutMe" class="HomepageText"><b>Home</b></a></li>
+                    <li><a href="#"><b>Hobby's</b></a></li>
+                    <li><a href="#"><b>Ervaring</b></a></li>
                     </ul>
                 </nav> 
             </header>
-            <img class="BackgroundImage"src="css/img/Background2.jpg" >
+            
+            <main>
+            <section>
+            <img class="BackgroundImage"src="img/Background.jpg">
             <div class ="centered"><h1><i>Welkom op de website van <h1 style ="color:#6a6acc";>Youri Kelderman</i></h1></div>
-        
-</div>
+            
+
+            
+            
+            <div class="DividerBlock"></div>
+            <div class="DividerBlock2"></div>
+        </section>
+            <section class="AboutMe" id="AboutMe">
+            <h2><i>Over Mij</i></h2>
+            <p><b><i>Hallo!</i></b> Mijn naam is Youri Kelderman. Ik ben 17 jaar en kom uit Monster. Ik heb de opleiding CMGT gekozen omdat ik een liefde heb voor gamen en dingen maken.
+            Ik hou van muziek maken en spelen en heb ook een paar eigen nummers geschreven! Mijn droom is om ooit zelf muziek te spelen voor een publiek. </p>
+
+            <h3>Muziek</h3>
+            <p>Mijn favoriete genres zijn rock en pop, bands zoals Queen, Green Day en Coldplay zijn mijn favorieten. Hieronder een aantal nummers.</p>
+
+            <div class ="Music"> 
+                <div class="song">
+                    <p><i><b>Viva La Gloria</i></b></p>
+                    <img src="img/Song1.jpg" width="100px">
+                    
+                    <audio id="player" controls >
+                    <source src="audio/Viva La Gloria.mp3">
+                  Your browser does not support the audio element.
+                  </audio></div>
+                  <div class="song">
+                    <p><i><b>Everglow</i></b></p>
+                    <img src="img/Song2.jpg" width="100px">
+                    
+                    <audio id="player" controls >
+                    <source src="audio/Everglow.mp3">
+                  Your browser does not support the audio element.
+                  </audio></div>
+                <div class="song"></div>
+                <div class="song"></div>
+                <div class="song"></div>
+                <div class="song"></div>
+            </div>
+            </section>
+
+
+            </main>
+        </div>
+
 </body>
 </html>
