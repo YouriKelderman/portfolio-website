@@ -11,6 +11,7 @@ body {
     background-color: rgb(255, 255, 255);
     margin: 0%;
     font-family: 'Courier New', Courier, monospace;
+    
 }
 
 .BackgroundImage {
@@ -34,7 +35,7 @@ body {
 
 .centered {
     position: absolute;
-    top: 45%;
+    top: 28%;
     left: 50%;
     color: white;
     
@@ -92,7 +93,44 @@ ul li a:hover{
     
 }
 
+.DividerBlock3 {
+    float:right;
+    top: 250px;
+    width         : 0;
+    height        : 0; 
+    border-left   : 0px solid transparent;
+    border-right  : 1920px solid transparent;  
+    border-bottom : 100px solid rgba(106,106,204,255);
+    position: relative;
+    z-index: 2;
+}
 
+.DividerBlock4 {
+    float:right;
+    top: 0;
+    bottom: 0;
+    left:0;
+    width         : 0;
+    height        : 0; 
+    border-left   : 1200px solid transparent;
+    border-right  : 0px solid transparent;  
+    border-bottom : 250px solid rgb(215, 215, 247);
+    position: relative;
+    
+}
+.DividerBlock5 {
+    float:right;
+    top: 0;
+    bottom: 0;
+    left:0;
+    width         : 0;
+    height        : 0; 
+    border-left   : 1200px solid transparent;
+    border-right  : 0px solid transparent;  
+    border-top : 700px solid rgb(215, 215, 247);
+    position: relative;
+    
+}
 #main {
     overflow: hidden;
 }
@@ -114,21 +152,21 @@ text-align: center;
     
 }
 
-Music{
-width: 50%
-
-
+.Music{
+    width: 50%;
+    height: 1000px;
 }
 .song {
     width: 200px;
     height: 200px;
     background-color: rgb(215, 215, 247);
     margin: 20px;
-    
+    border-radius: 1em;
     display: inline-block;
     font-size: 0.9em;
     overflow: hidden;
     font-family:Arial, Helvetica, sans-serif;
+    box-shadow: -5px 7px 6px 0px rgba(0,0,0,0.48);
 }
 
 .song span {
@@ -144,4 +182,6 @@ width: 50%
 audio::-webkit-media-controls-panel{
     background-color: rgb(201, 201, 241);
     
-    }
+}
+
+
