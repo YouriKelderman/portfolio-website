@@ -1,5 +1,5 @@
 
-.headerBar{
+.header{
 
     width: 100%;
     height: 100px;
@@ -22,6 +22,14 @@ body {
     max-width: 100%;
     display: block;
 }
+.BackgroundImage1 {
+    width: 100%;
+    height: 60%;
+    margin: 0 auto;
+    object-fit: cover;
+    max-width: 100%;
+    display: block;
+}
 
 .container{
     position: relative;
@@ -32,7 +40,14 @@ body {
   
 
 }
+.container1{
+    position: relative;
+    min-width: 1280px;
+    
+  margin: 0 auto;
+  padding: 350px 0 0 0 ;
 
+}
 .centered {
     position: absolute;
     top: 28%;
@@ -95,7 +110,7 @@ ul li a:hover{
 
 .DividerBlock3 {
     float:right;
-    top: 250px;
+    top: 251px;
     width         : 0;
     height        : 0; 
     border-left   : 0px solid transparent;
@@ -118,18 +133,15 @@ ul li a:hover{
     position: relative;
     
 }
-.DividerBlock5 {
-    float:right;
-    top: 0;
-    bottom: 0;
-    left:0;
-    width         : 0;
-    height        : 0; 
-    border-left   : 1200px solid transparent;
-    border-right  : 0px solid transparent;  
-    border-top : 700px solid rgb(215, 215, 247);
-    position: relative;
-    
+.BackgroundImage1 {
+    width: 100%;
+    height: 60%;
+    transform: rotate(180deg);
+    transform:rotateZ(180deg);
+    margin: 0 auto;
+    object-fit: cover;
+    max-width: 100%;
+    display: block;
 }
 #main {
     overflow: hidden;
@@ -167,6 +179,7 @@ text-align: center;
     overflow: hidden;
     font-family:Arial, Helvetica, sans-serif;
     box-shadow: -5px 7px 6px 0px rgba(0,0,0,0.48);
+    z-index: 100;
 }
 
 .song span {
@@ -176,7 +189,7 @@ text-align: center;
 #player {
     position: relative;
     width:100%;
-    
+    z-index: 100;
     background-color: rgb(201, 201, 241);
 }
 audio::-webkit-media-controls-panel{
@@ -184,4 +197,73 @@ audio::-webkit-media-controls-panel{
     
 }
 
+.Experience {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    color: white;
+    
+    font-size: 3em;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+}
 
+.text {
+    position: absolute;
+    top: 49%;
+    text-align: center;
+    z-index: 100;
+    font-size: 1.5em;
+    padding: 0 10% 0 10%;
+    color: white;
+}
+
+* {box-sizing:border-box}
+
+.container2 {
+
+  width: 100%;
+  margin: auto;
+  height: 18px;
+  background-color: #ddd;
+}
+
+.container3{
+    text-align: left;
+    margin: 0;
+}
+
+.skills{
+    position: absolute;
+}
+
+.skills1 {
+  text-align: right; 
+  width: 50%;
+  position: absolute;
+  left: 25%;
+  top: 60%;
+  padding-bottom: 2px; 
+  color: white; 
+  
+}
+.html {width: 30%; background-color: #04AA6D;} 
+.css {width: 30%; background-color: #2196F3;} 
+.js {width: 45%; background-color: #f44336;} 
+.php {width: 0%; background-color: #808080;} 
+
+
+.footer{
+    width: 100%;
+    height:50px;
+    background-color: rgb(215, 215, 247);
+    text-align: center;
+    padding: 15px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.footer a {
+    text-decoration: none;
+    color: black;
+    
+}
