@@ -1,269 +1,84 @@
-
-.header{
-
-    width: 100%;
-    height: 100px;
-    background-image: linear-gradient(149deg, rgba(106,106,204,255) 10%, rgba(35,31,32,255) 40%);
-
-
-}
 body {
-    background-color: rgb(255, 255, 255);
-    margin: 0%;
-    font-family: 'Courier New', Courier, monospace;
-    
-}
-
-.BackgroundImage {
-    width: 100%;
-    height: 60%;
-    margin: 0 auto;
-    object-fit: cover;
-    max-width: 100%;
-    display: block;
-}
-.BackgroundImage1 {
-    width: 100%;
-    height: 60%;
-    margin: 0 auto;
-    object-fit: cover;
-    max-width: 100%;
-    display: block;
-}
-
-.container{
-    position: relative;
-    min-width: 1280px;
-    min-height: 1280px;
-  margin: 0 auto;
-  padding: 0;
-  
-
-}
-.container1{
-    position: relative;
-    min-width: 1280px;
-    
-  margin: 0 auto;
-  padding: 350px 0 0 0 ;
-
-}
-.centered {
-    position: absolute;
-    top: 28%;
-    left: 50%;
-    color: white;
-    
-    font-size: 1.8em;
-    transform: translate(-50%, -50%);
-}
-
-nav{
-float:left;
-width: 100%;
-}
-
-ul{
-    list-style: none;
-}
-
-ul li a {
-    
-    float: left;
-    color: rgb(255, 255, 255);
-    user-select: none;
-    font-size: 1.4em;
-    text-decoration-line: none;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    letter-spacing: 1px;
-    
-    padding: 0px 2%;
-    height: 80px;
-    line-height: 80px;
-}
-
-ul li a:hover{
-    background-color: rgb(186, 186, 226);
-}
-
-.DividerBlock {
-    float:right;
-    width         : 0;
-    height        : 0; 
-    border-left   : 1920px solid transparent;
-    border-right  : 0px solid transparent;  
-    border-top : 100px solid rgba(106,106,204,255);
-    position: relative;
-    z-index: 2;
-}
-
-.DividerBlock2 {
-    float:left;
-    width         : 0;
-    height        : 0; 
-    border-left   : 0px solid transparent;
-    border-right  : 1200px solid transparent;  
-    border-top : 250px solid rgb(215, 215, 247);
-    position: absolute;
-    
-}
-
-.DividerBlock3 {
-    float:right;
-    top: 251px;
-    width         : 0;
-    height        : 0; 
-    border-left   : 0px solid transparent;
-    border-right  : 1920px solid transparent;  
-    border-bottom : 100px solid rgba(106,106,204,255);
-    position: relative;
-    z-index: 2;
-}
-
-.DividerBlock4 {
-    float:right;
-    top: 0;
-    bottom: 0;
-    left:0;
-    width         : 0;
-    height        : 0; 
-    border-left   : 1200px solid transparent;
-    border-right  : 0px solid transparent;  
-    border-bottom : 250px solid rgb(215, 215, 247);
-    position: relative;
-    
-}
-.BackgroundImage1 {
-    width: 100%;
-    height: 60%;
-    transform: rotate(180deg);
-    transform:rotateZ(180deg);
-    margin: 0 auto;
-    object-fit: cover;
-    max-width: 100%;
-    display: block;
-}
-#main {
-    overflow: hidden;
-}
-
-.AboutMe {
-position: relative;
-top: 60px;
-width: 50%;
-margin: auto;
-text-align: center;
-
-}
-.AboutMe h2{
-    font-size: 1.8em;
-    
-}
-.AboutMe p{
-    font-size: 1.2em;
-    
-}
-
-.Music{
-    width: 50%;
-    height: 1000px;
-}
-.song {
-    width: 200px;
-    height: 200px;
-    background-color: rgb(215, 215, 247);
-    margin: 20px;
-    border-radius: 1em;
-    display: inline-block;
-    font-size: 0.9em;
-    overflow: hidden;
-    font-family:Arial, Helvetica, sans-serif;
-    box-shadow: -5px 7px 6px 0px rgba(0,0,0,0.48);
-    z-index: 100;
-}
-
-.song span {
-    position: absolute;
-    bottom: 0;
-}
-#player {
-    position: relative;
-    width:100%;
-    z-index: 100;
-    background-color: rgb(201, 201, 241);
-}
-audio::-webkit-media-controls-panel{
-    background-color: rgb(201, 201, 241);
-    
-}
-
-.Experience {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    color: white;
-    
-    font-size: 3em;
-    transform: translate(-50%, -50%);
-    z-index: 100;
-}
-
-.text {
-    position: absolute;
-    top: 49%;
-    text-align: center;
-    z-index: 100;
-    font-size: 1.5em;
-    padding: 0 10% 0 10%;
-    color: white;
-}
-
-* {box-sizing:border-box}
-
-.container2 {
-
-  width: 100%;
-  margin: auto;
-  height: 18px;
-  background-color: #ddd;
-}
-
-.container3{
-    text-align: left;
     margin: 0;
-}
-
-.skills{
-    position: absolute;
-}
-
-.skills1 {
-  text-align: right; 
-  width: 50%;
-  position: absolute;
-  left: 25%;
-  top: 60%;
-  padding-bottom: 2px; 
-  color: white; 
-  
-}
-.html {width: 30%; background-color: #04AA6D;} 
-.css {width: 30%; background-color: #2196F3;} 
-.js {width: 45%; background-color: #f44336;} 
-.php {width: 0%; background-color: #808080;} 
-
-
-.footer{
-    width: 100%;
-    height:50px;
-    background-color: rgb(215, 215, 247);
-    text-align: center;
-    padding: 15px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.footer a {
-    text-decoration: none;
-    color: black;
+    padding: 0;
+    background-color: rgb(120, 158, 194);
     
+}
+main {
+    width: 100vw;
+    height: 1000px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+nav {
+    background-image: linear-gradient(149deg, rgb(89, 126, 160) 329px, rgba(0,0,0,0) 385px);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;   
+    
+}
+header {
+    width: 100vw;
+    height: 200px;
+    background-image: url(/img//Background1.jpg);
+    background-size: cover;
+    background-position: top;
+    margin: 0px;
+    padding: 0;
+}
+nav a:hover {
+background-color: rgb(140, 178, 214);
+}
+
+.DividerTriangleLeft {
+padding: 0;
+margin: 0;
+width: 0;
+height: 0;
+border-style: solid;
+border-width: 100px 100vw 0 0;
+border-color: #2C2C2C transparent transparent transparent;
+}
+
+nav img {
+    padding: 0px 0px;
+}
+nav a {
+    display: block;
+    color: white;
+    text-align:center;
+    padding: 30px 20px;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+h1 {
+    display: flex;
+    color: white;
+    align-self:center;
+    font-size: 3em;
+    margin-top: 55px;
+}
+
+@media (max-width: 600px) {
+    header {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+    nav {
+        background-color: rgb(89, 126, 160);
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    nav a {
+        border-left: none;
+        border-top: 1px solid white;
+        
+    }
 }
