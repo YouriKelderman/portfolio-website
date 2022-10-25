@@ -95,7 +95,6 @@ Song Section HomePage
 */
 .Songs{
     margin: 40px 0 0 0;
-    width: 50vw;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
