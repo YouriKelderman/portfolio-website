@@ -14,7 +14,7 @@ html {
 header {
     width: 100vw;
     height: 200px;
-    background-image: url('../BackgroundImage.jpg');
+    background-image: url('../Background.jpg');
     background-size: cover;
     background-position: top;
     margin: 0px;
