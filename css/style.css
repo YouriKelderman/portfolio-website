@@ -106,7 +106,7 @@ Song Section HomePage
     width: 250px;
     height: 250px;
     
-    background-image: url(/img/Logo.png);
+    background-color: rgb(183, 209, 233);
     border-radius: 40px;
     display: flex;
     margin: 10px;
