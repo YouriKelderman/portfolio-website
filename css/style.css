@@ -2,22 +2,27 @@ body {
     margin: 0;
     padding: 0;
     background-color: rgb(120, 158, 194);
-
+overflow-x: hidden;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 html {
     scroll-behavior: smooth;
 }
+
 header {
     width: 100vw;
     height: 200px;
-    background-image: url(/img//Background1.jpg);
+    background-image: url(/img//Background.jpg);
     background-size: cover;
     background-position: top;
     margin: 0px;
     padding: 0;
 }
 
+#iframe {
+    box-shadow: 100px;
+}
 
 nav {
     background-image: linear-gradient(149deg, rgb(89, 126, 160) 329px, rgba(0, 0, 0, 0) 385px);
@@ -30,7 +35,7 @@ nav {
 nav a:hover {
     background-color: rgb(140, 178, 214);
     background-position: 100vw;
-    transform:translateY(10px);
+    transform: translateY(10px);
     border-radius: 10px;
 }
 
@@ -46,16 +51,21 @@ nav a {
     padding: 30px 20px;
     text-decoration: none;
     font-size: 1.5em;
-    
-transition: transform 0.2s;
-text-transform: none;
+
+    transition: transform 0.2s;
+    text-transform: none;
 }
 
 main {
     width: 100vw;
     height: 1000px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 50vw;
+    margin: 0 auto;
+    color: white;
+
 }
 
 .DividerTriangleLeft {
@@ -70,13 +80,71 @@ main {
 
 
 
+
+
 #AboutMe {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 50vw;
+margin: 0;
+padding: 0;
+}
+/* 
+Song Section HomePage
+*/
+.Songs{
+    margin: 40px 0 0 0;
+    width: 50vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.Song {
+    width: 250px;
+    height: 250px;
+    background-color: rgb(183, 209, 233);
+    border-radius: 40px;
+    display: flex;
+    margin: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    overflow: hidden;
+    box-shadow: -2px 7px 6px 6px rgba(0, 0, 0, 0.36);
+    transition: .2s ease-in-out 0s;
+}
+.Song img {
+    width: 50%;
+    height: 50%;
+    margin: 0 0 20px 0;
+    border-radius: 10px;
+}
+
+.Song p {
+    font-size: 1.6em;
+    color: black;
+    margin: 0 0 10px 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#player {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+audio::-webkit-media-controls-panel {
+    background-color: rgb(255, 255, 255);
 
 }
+
+.Song:hover{
+    transform: scale(1.1);
+}
+/* 
+Song Section HomePage
+*/
 
 h1 {
 
@@ -84,6 +152,11 @@ h1 {
 
     font-size: 3em;
     margin-top: 55px;
+}
+
+h2 {
+    padding: 10px 0px 0 0;
+    font-size: 2em;
 }
 
 p {
@@ -120,9 +193,15 @@ p {
         padding: 0px 0px;
         width: 50px;
     }
+
     nav a:hover {
         background-color: rgb(140, 178, 214);
         background-position: 100vw;
         transform: scaleY(1);
+    }
+
+    h1 {
+        font-size: 2em;
+        margin-top: 55px;
     }
 }
