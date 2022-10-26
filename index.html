@@ -8,20 +8,29 @@
   <link rel="stylesheet" href="css/style.css">
   <meta name="description" content="Youri's Portfolio website">
   <title>Website Youri</title>
+  <script>
+    window.addEventListener("scroll", function () {
+      var nav = document.querySelector("nav");
+      nav.classList.toggle("sticky", window.scrollY > 0)
+    })
+  </script>
 </head>
 
 <body>
   <header>
     <nav>
-      <img class="navbar" src="img/Logo.png" alt="website logo">
       <a class="navbar" href="index.html">Over Mij</a>
       <a class="navbar" href="experience.html">Ervaring</a>
       <a class="navbar" href="contact.html">Contact</a>
     </nav>
   </header>
-  <div class="DividerTriangleLeft"></div>
+  <div class="transitiontriangles">
+    <div class="DividerTriangleLeft"></div>
+    <div class="DividerTriangleRight"></div>
+  </div>
   <main>
     <section class="AboutMe" id="AboutMe">
+      
       <h1>Over Mij</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rhoncus diam vitae lacus sodales convallis.
         Aenean in ante vehicula, volutpat nibh et, viverra magna. Morbi blandit, dolor rutrum pulvinar mollis, sem neque
@@ -37,12 +46,14 @@
       <p>Ik hou heel erg van muziek! Hieronder een paar nummers die ik erg goed vind.</p>
       <div class="Songs">
         <div class="Song">
-          <p>Viva La GLoria</p><img src="img/Song1.jpg" alt="Foto van album van de band Green Day"><audio id="player" controls>
+          <p>Viva La GLoria</p><img src="img/Song1.jpg" alt="Foto van album van de band Green Day"><audio id="player"
+            controls>
             <source src="sounds/Viva La Gloria.mp3" type="audio/mpeg">
           </audio>
         </div>
         <div class="Song">
-          <p>Aint Talking Bout Love</p><img src="img/Song2.jpg" alt="Foto van album van de band Van Halen"><audio id="player" controls>
+          <p>Aint Talking Bout Love</p><img src="img/Song2.jpg" alt="Foto van album van de band Van Halen"><audio
+            id="player" controls>
             <source src="sounds/Aint talking bout love.mp3" type="audio/mpeg">
           </audio>
         </div>
@@ -52,12 +63,12 @@
           </audio>
         </div>
       </div>
-      </section>
-      </main>
-      <footer>
-        <a href="https://www.youtube.com/" aria-label="Youtube"><img src="img/youtube.png" alt="Youtube link"></a>
-        <p>2022&#169 Youri</p>
-      </footer>
+    </section>
+  </main>
+  <footer>
+    <a href="https://www.youtube.com/" aria-label="Youtube"><img src="img/youtube.png" alt="Youtube link"></a>
+    <p>2022&#169 Youri</p>
+  </footer>
 </body>
 
 </html>
