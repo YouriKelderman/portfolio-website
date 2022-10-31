@@ -8,24 +8,48 @@
   <link rel="stylesheet" href="css/style.css">
   <meta name="description" content="Youri's Portfolio website">
   <title>Website Youri</title>
+  <script>
+    window.addEventListener("scroll", function () {
+      var nav = document.querySelector("nav");
+      nav.classList.toggle("sticky", window.scrollY > 0)
+    })
+  </script>
 </head>
 
 <body>
   <header>
     <nav>
-      <img class="navbar" src="img/Logo.png" alt="website logo">
       <a class="navbar" href="index.html">Over Mij</a>
       <a class="navbar" href="experience.html">Ervaring</a>
       <a class="navbar" href="contact.html">Contact</a>
     </nav>
   </header>
-  <div class="DividerTriangleLeft"></div>
+  <div class="transitiontriangles">
+    <div class="DividerTriangleLeft"></div>
+    <div class="DividerTriangleRight"></div>
+  </div>
   <main>
     <h1>Ervaring</h1>
-      </main>
-      <footer>
-        <a href="https://www.youtube.com/" aria-label="Youtube"><img src="img/youtube.png" alt="Youtube link"></a>
-        <p>2022&#169 Youri</p>
-      </footer>
+    <section class="Experience" id="Experience">
+      <section class="skillbars"> 
+        <p>HTML</p>
+          <div class="skills html"><a>40%</a></div>
+        
+        <p>CSS</p>
+          <div class="skills css"><a>50%</a></div>
+        
+        <p>JavaScript</p>
+          <div class="skills js"><a>60%</a></div>
+      </section>
+      <p class="ExperienceText">Ik vind zelf dat ik oké ben in de dingen die ik tot nu toe ken, ik weet niet hoeveel er mogelijk is met en hoeveel er te weten is dus daarom kan ik mezelf niet goed inschatten,
+        er zijn altijd nieuwe dingen te leren dus je bent nooit echt bij 100%</p>
+      </p>
+      </section>
+  </main>
+  <footer>
+    <a href="https://www.youtube.com/" aria-label="Youtube"><img src="img/youtube.png" alt="Youtube link"></a>
+    <p>2022&#169 Youri</p>
+  </footer>
 </body>
+
 </html>
