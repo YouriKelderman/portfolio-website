@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="description" content="Youri's Portfolio website">
+    <title>Website Youri</title>
+    <script>
+        window.addEventListener("scroll", function () {
+            var nav = document.querySelector("nav");
+            nav.classList.toggle("sticky", window.scrollY > 0)
+        })
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a class="navbar" href="index.html">Over Mij</a>
+            <a class="navbar" href="experience.html">Ervaring</a>
+            <a class="navbar" href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <div class="transitiontriangles">
+        <div class="DividerTriangleLeft"></div>
+        <div class="DividerTriangleRight"></div>
+    </div>
+    <main>
+        <h1>Bedankt!</h1>
+        <section class="landing">
+            <p>bedankt voor het mailen! jammer genoeg ga ik het waarschrijnlijk nooit lezen</p>
+        </section>
+    </main>
+    <footer>
+        <a href="https://www.youtube.com/" aria-label="Youtube"><img src="img/youtube.png" alt="Youtube link"></a>
+        <p>2022&#169 Youri</p>
+    </footer>
+</body>
+
+</html>

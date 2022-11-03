@@ -15,7 +15,6 @@
     })
   </script>
 </head>
-
 <body>
   <header>
     <nav>
@@ -29,40 +28,30 @@
     <div class="DividerTriangleRight"></div>
   </div>
   <main>
-    <section class="AboutMe" id="AboutMe">
-      <h1>Over Mij</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rhoncus diam vitae lacus sodales convallis.
-        Aenean in ante vehicula, volutpat nibh et, viverra magna. Morbi blandit, dolor rutrum pulvinar mollis, sem neque
-        porttitor arcu, vel sollicitudin sem diam et nunc.
-        Nullam vitae ligula in nulla tincidunt vestibulum et eget ipsum. Donec eget est consequat risus imperdiet rutrum
-        at non libero.
-        Cras a velit sit amet dolor luctus sagittis. Integer pulvinar lectus sem, ac sagittis lacus blandit ut. Duis
-        arcu erat, porta pretium felis ut,
-        euismod scelerisque odio. Donec sollicitudin sed dolor eu mollis. Donec nulla quam, convallis at nisi at,
-        ultricies tempus odio.
-      </p>
-      <h2>Muziek</h2>
-      <p>Ik hou heel erg van muziek! Hieronder een paar nummers die ik erg goed vind.</p>
-      <div class="Songs">
-        <div class="Song">
-          <p>Viva La GLoria</p><img src="img/Song1.jpg" alt="Foto van album van de band Green Day"><audio id="player"
-            controls>
-            <source src="sounds/Viva La Gloria.mp3" type="audio/mpeg">
-          </audio>
-        </div>
-        <div class="Song">
-          <p>Aint Talking Bout Love</p><img src="img/Song2.jpg" alt="Foto van album van de band Van Halen"><audio
-            id="player" controls>
-            <source src="sounds/Aint talking bout love.mp3" type="audio/mpeg">
-          </audio>
-        </div>
-        <div class="Song">
-          <p>All Dead</p><img src="img/Song3.jpg" alt="Foto van album van de band Queen"><audio id="player" controls>
-            <source src="sounds/All Dead.mp3" type="audio/mpeg">
-          </audio>
-        </div>
+    
+    <h1>Contact</h1>
+    <section class="form">
+    <form class="Contact" action="contact-bedankt.html">
+      <div class="form-element">
+        <label for="name">Naam</label>
+        <input type="text" id="name" name="name" placeholder="Joe" required>
       </div>
-    </section>
+      <div class="form-element">
+        <label for="email" id="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Joe123@gmail.com" required>
+      </div>
+      <div class="form-element">
+        <label for="date" id="date">Datum</label>
+        <input type="date" id="date" name="date" placeholder="datum">
+      </div>
+      
+      <div class="form-element">
+        <label for="message" id="message">Bericht</label>
+        <input type="text" id="message" name="message" placeholder="Typ hier je bericht" required>
+      </div>
+      <button type="submit">Versturen</button>
+    </form>
+  </section>
   </main>
   <footer>
     <a href="https://www.youtube.com/" aria-label="Youtube"><img src="img/youtube.png" alt="Youtube link"></a>
