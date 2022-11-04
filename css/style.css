@@ -14,7 +14,7 @@ html {
 header {
     width: 100vw;
     height: 200px;
-    background-image: url('../img/BackgroundImage.jpg');
+    background-image: url(/img/BackgroundImage.jpg);
     background-size: cover;
     background-position: top;
 
@@ -69,17 +69,7 @@ nav img {
     width: 100px;
 }
 
-/* Main Page Content */
-
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 auto;
-    color: white;
-    animation: fade 1s forwards;
-}
-
+/*Transition Triangles*/
 .transitiontriangles {
     display: grid;
     justify-content: space-around;
@@ -110,7 +100,15 @@ main {
     border-color: transparent #2C2C2C transparent transparent;
 }
 
-
+/* All pages*/
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    color: white;
+    animation: fade 1s forwards;
+}
 /*About Me Page*/
 #AboutMe {
     display: flex;
@@ -183,34 +181,39 @@ audio::-webkit-media-controls-panel {
 
 /*Experience Page*/
 #Experience {
-    display: flex;
-    flex-direction: column;
+
     align-items: center;
     width: 50vw;
     margin: 0;
     padding: 0;
 }
 .landing {
-    display: flex;
-    flex-direction: column;
+
     align-items: center;
     width: 30vw;
-    margin-bottom: 299px;
+    margin-bottom: 350px;
     padding: 10px;
     border-radius: 10px;
     background-color: rgb(151, 151, 151);
 }
+.landing p {
+
+}
+.Contact, .landing, #Experience {
+    display: flex;
+    flex-direction: column;
+}
+
 .Contact {
     min-width: 240px;
     width: 30vw;
     margin: 0 auto;
     padding: 10px;
     margin-bottom: 200px;
-    display: flex;
     height: 300px;
-    flex-direction: column;
     justify-content: center;
     background-color: rgb(151, 151, 151);
+    border-radius: 15px;
 }
 .form-element {
     display: flex;
@@ -223,6 +226,7 @@ button {
 label {
     flex: 1;
 }
+
 #Experience p {
     font-size: 1.2em;
 }
@@ -254,40 +258,36 @@ label {
 .skillbars a {
     padding-right: 5px;
 }
+
+.html, .css, .js {
+    border-radius: 0px 15px 15px 0px;
+}
 .html {
     animation: html 2s forwards;
     background-color: #4998ff;
-    border-radius: 0px 15px 15px 0px;
+    
 }
 .css {
     animation: css 2s forwards;
     background-color: #0070cc;
-    border-radius: 0px 15px 15px 0px;
 }
-
 .js {
     animation: js 2s forwards;
     background-color: #002a68;
-    border-radius: 0px 15px 15px 0px;
 }
-
-h1 {
+h1, h2 {
     color: white;
-    font-size: 3em;
-    margin-top: 80px;
-    padding: 15px;
-    background-image: url('../img/shape.png');
-    background-size: cover;
-    background-position:0%;
-    
-}
-h2 {
     margin-top: 50px;
     padding: 15px;
-    font-size: 2em;
-    background-image: url('../img/shape.png');
+    background-image: url(/img/shape.png);
     background-size: cover;
-    background-position: center;
+    background-position: 0%;
+}
+h1 {
+    font-size: 3em;
+}
+h2 {
+    font-size: 2em;
 }
 p {
     margin: 0 10px 0 10px;
